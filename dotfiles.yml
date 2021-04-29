@@ -1,0 +1,11 @@
+---
+- name: Set up local workstation
+  hosts: remote
+  user: testansible
+  roles:
+    - role: zsh
+      tags:
+        - zsh
+    - role: starship
+      tags:
+        - starship
