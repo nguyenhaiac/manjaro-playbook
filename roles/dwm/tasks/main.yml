@@ -1,0 +1,11 @@
+- name: Clone DWM
+  git:
+    repo: https://github.com/nguyenhaiac/dwm.git
+    dest: $HOME/dwm
+
+- name: install DWM
+  become: yes
+  become_user: root
+  shell: make clean install
+  args:
+    chdir: "{{ansible_env.HOME}}/dwm"

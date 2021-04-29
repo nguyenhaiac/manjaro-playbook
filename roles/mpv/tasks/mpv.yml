@@ -1,6 +1,0 @@
-- name: Install mpv
-  become: yes
-  become_user: root
-  pacman:
-    name: mpv
-    state: present

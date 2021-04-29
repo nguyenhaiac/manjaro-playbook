@@ -1,0 +1,11 @@
+- name: install alacritty
+  become: yes
+  become_user: root
+  package:
+    name:
+      - alacritty
+
+- name: copy config
+  copy:
+    src: "./files/"
+    dest: "{{ ansible_env.HOME }}/.config/alacritty/"

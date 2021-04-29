@@ -1,0 +1,11 @@
+- name: install ranger
+  become: yes
+  become_user: root
+  package:
+    name:
+      - ranger
+
+- name: copy config
+  copy:
+    src: "./files/"
+    dest: "{{ ansible_env.HOME }}/.config/ranger/"

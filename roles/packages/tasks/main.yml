@@ -1,0 +1,8 @@
+- name: Install packages
+  package:
+    name:
+      - htop
+      - neovim
+      - dunst
+      - sxhkd
+      - mpd

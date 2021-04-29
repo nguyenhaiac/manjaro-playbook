@@ -1,0 +1,11 @@
+- name: install dunst
+  become: yes
+  become_user: root
+  package:
+    name:
+      - dunst
+
+- name: copy config
+  copy:
+    src: "./files/"
+    dest: "{{ ansible_env.HOME }}/.config/dunst/"

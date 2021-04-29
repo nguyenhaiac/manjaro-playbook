@@ -6,6 +6,15 @@
     - role: zsh
       tags:
         - zsh
-    - role: starship
+    - role: dwm
       tags:
-        - starship
+        - dwm
+    - role: ranger
+      tags:
+        - rangers
+    - role: dunst
+      tags:
+        - dunst
+    - role: alacritty
+      tags:
+        - alacritty
